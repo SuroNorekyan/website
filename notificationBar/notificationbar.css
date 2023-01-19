@@ -1,0 +1,120 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: wheat;
+}
+
+.notifications{
+    background: transparent;
+    top: 30px;
+    right:20px ;
+    position: fixed;
+}
+.notifications :where(.toast, .column){
+    display: flex;
+    align-items: center;
+}
+.notifications .toast{
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    border-radius: 8px;
+    padding: 16px 17px;
+    margin-bottom: 10px;
+    background: white;
+    justify-content: space-between;
+    animation: show_toast .3s ease forwards;
+}
+
+@keyframes show_toast{
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-5%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+.notifications .toast.hide{
+    animation: hide_toast .3s ease forwards;
+}
+@keyframes hide_toast{
+    0%{
+        transform: translateX(-10px);
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(-5%);
+    }
+    100%{
+        transform: translateX(calc(100% + 20px));
+    }
+}
+.toast::before{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    background: red;
+    animation: progress 5s linear forwards;
+}
+@keyframes progress{
+    100%{
+        width: 0%;
+    }
+}
+.toast.sucess::before, .btn#success{
+    background: green;
+}
+.toast.error::before, .btn#error{
+    background: orangered;
+}
+
+
+.toast.success .column i{
+    color: green;
+}
+.toast.error .column i{
+    color: red;
+}
+
+.toast .column i{
+    font-size: 1.75rem;
+}
+.toast .column span{
+font-size: 1.07rem;
+margin-left: 12px;
+}
+
+.toast i:last-child{
+    color: #aeb0d7;
+    cursor: pointer;
+}
+.toast i:last-child:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.buttons .btn{
+    border: none;
+    outline: none;
+    color: white;
+    margin:0 5px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+
+}

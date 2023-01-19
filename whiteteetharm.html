@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whiteteetharm</title>
+    <link rel="stylesheet" href="whiteteetharm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts-6/css/all.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+            <div class="navbar">
+                    <div class="logo">
+                        <img src="images/logo_png.png" alt="logo" width="100px">
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Product</a></li>
+                            <li><a href="">About</a></li>
+                        </ul>
+                    </nav>
+                    <i class="fa-solid fa-cart-shopping shopping-cart" 
+                    onclick = "ShoppingCart()"></i>
+                    <i class="fa-sharp fa-solid fa-bars menu_hamburger"
+                    onclick="HamburgerMenu()"></i>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Title 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Culpa, accusantium ipsa illum assumenda, 
+                        unde optio odit, quaerat 
+                        deleniti eligendi pariatur libero. Doloremque 
+                        eaque consectetur nisi harum soluta 
+                        vero dicta animi.
+                    </p>
+                    <button class="btn" onclick = "ShopNow()">Shop Now</button>
+                    
+                </div>
+                <div class="col-2">
+                    <img src="images/logo_png.png" alt="">
+                </div>
+            </div>
+    </div>
+
+   
+</div>
+
+
+<!-- Notifications -->
+<ul class="notifications"></ul>
+ <!-- Featured -->
+    <div class="categories">
+        <div class="small-container-1">
+           
+            <div class="row">
+                <div class="col-4" id="prodID">
+                    <img src="images/prod1.jpeg" alt="">
+                    <h4>Teeth Whitening Toothpaste</h4>
+                    <p>39.99$</p>
+                    <button onclick="AddToCart(this)" id="success">Add to Cart</button>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/prod1.jpeg" alt="">
+                    <h4>Teeth Whitening Toothpaste</h4>
+                    <p>49.99$</p>
+                    <button onclick="AddToCart(this)" id="success">Add to Cart</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/prod1.jpeg" alt="">
+                    <h4>Teeth Whitening Toothpaste</h4>
+                    <p>59.99$</p>
+                    <button onclick="AddToCart(this)" id="success">Add to Cart</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/prod1.jpeg" alt="">
+                    <h4>Teeth Whitening Toothpaste</h4>
+                    <p>69.99$</p>
+                    <button onclick="AddToCart(this)" id="success">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <!-- Featured products -->
+    <div class="small-container">
+        <h2 class="title">Featured product</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/prod1.jpeg" alt="">
+                <h4>Teeth Whitening Toothpaste</h4>
+                <p>39.99$</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonial -->
+    <h2 class="title">Your Feedbacks</h2>
+    <div class="testimonial">
+        <div class="small-container-1">
+            <div class="row">
+                <div class="col-3">
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Beatae molestias 
+                        vel architecto placeat, at tempora 
+                        cum itaque porro, magni ex, hic ea 
+                        consequatur. Doloremque laboriosam 
+                        tenetur sapiente iste corporis tempore?
+                    </p>
+                    <b>Anun Azganun</b>
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Beatae molestias 
+                        vel architecto placeat, at tempora 
+                        cum itaque porro, magni ex, hic ea 
+                        consequatur. Doloremque laboriosam 
+                        tenetur sapiente iste corporis tempore?
+                    </p>
+                    <b>Anun Azganun</b>
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Beatae molestias 
+                        vel architecto placeat, at tempora 
+                        cum itaque porro, magni ex, hic ea 
+                        consequatur. Doloremque laboriosam 
+                        tenetur sapiente iste corporis tempore?
+                    </p>
+                    <b>Anun Azganun</b>
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter Your Name: "><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter Your Email: "><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" placeholder="Enter Your Message: "></textarea><br>
+          <button type="submit">Send</button>
+        </form>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="whiteteetharm.js"></script>
+</body>
+</html>
